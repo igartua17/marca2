@@ -1,0 +1,15 @@
+{% extends 'uniMarcaBundle::layout.html.twig' %}
+
+{% block cuerpo %}
+    
+   <br>Buscar Titulo:
+<form action="{{path('noticias_responder_titulo')}}" method="POST">
+    <input type="text" name="titulo" value="Titulo a buscar">
+    <input type="submit" value="OK">
+</form> 
+
+    
+{%endblock%}  
+    
+    
+    

@@ -1,0 +1,31 @@
+{% extends 'uniMarcaBundle::layout.html.twig' %}
+
+
+
+{% block cuerpo %}
+    <h1 class="titulo">{{ entity.titulo }}</h1><br/>
+     <img src="{{ asset('bundles/unimarca/imagenes/'~ entity.foto ~ '') }}" width=30% height=35%/> <br>{{ entity.autor }}{{ entity.fecha|date('Y-m-d H:i:s') }}
+    <table class="record_properties">
+        <tbody>
+           
+            
+            <tr>
+                
+                <td>{{ entity.contenido }}<br>
+               </td>
+            </tr>
+          
+           
+            <a href="{{path ('noticias_edit', {'id':entity.id }) }}">edit</a>
+        </tbody>
+    </table>
+
+       
+   
+        <a href="{{ path('noticias') }}">
+            Volver
+        </a>
+   
+    
+</ul>
+{% endblock %}

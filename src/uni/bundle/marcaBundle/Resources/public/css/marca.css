@@ -1,0 +1,13 @@
+.titulo{
+    background-color: red;
+    text-align: center;
+}
+
+#cuerpo{
+     background-color: green;
+}
+
+#pie{
+    background-color: yellow;
+    text-align: center;
+}

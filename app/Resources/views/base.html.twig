@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Marca{% endblock %}</title>
+        {% block stylesheets %}
+               <link href="{{ asset('bundles/unimarca/css/marca.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        
+    </head>
+    <body>
+        
+ <div id="titulo">
+      {% block cabecera %}
+          
+      {% endblock %}
+  </div>
+        
+ <div id="cuerpo">
+      {% block cuerpo %}
+    
+      {% endblock %}
+  </div>
+        
+ <div id="pie">
+      {% block pie %}
+    By Haritz
+      {% endblock %}
+  </div>
+
+       
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

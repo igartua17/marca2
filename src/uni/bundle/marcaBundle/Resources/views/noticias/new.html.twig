@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block cuerpo -%}
+    <h1 class="titulo">Creacion de Noticia</h1>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('noticias') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}
